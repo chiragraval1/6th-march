@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-image: linear-gradient(to right,rgb(90, 199, 243),rgb(144, 37, 227));
+        }
+        .main{
+            margin: auto;
+            margin-top: 100px;
+            padding:20px;
+            width: 500px;
+            height: 350px;
+            background-color: white;
+        }
+        h1{
+            text-align: center;
+            color: transparent;
+            background: linear-gradient(to right,rgb(144, 37, 227),rgb(90, 199, 243),rgb(144, 37, 227),rgb(144, 37, 227));
+            /* background: green; */
+            -webkit-background-clip: text;
+
+        }
+        .first{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+        }
+        input{
+            width: 200px;
+            border: none;
+            border-bottom: 2px solid grey;
+        }
+
+        .mess{
+            width: 100%;
+            line-height: 30px;
+            height: 70px;
+        }
+        button{
+            background-image: linear-gradient(to right,aqua,rgb(144, 37, 227));
+            width: 150px;
+            padding: 5px;
+            margin-top: 40px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        
+    <h1>Responsive Contact us Form</h1>
+    <div class="first">
+        <div class="left"><input type="text" placeholder="first name"></div>
+        <div class="right"><input type="text" placeholder="Last name"></div>
+    </div>
+    <div class="first">
+        <div class="left"><input type="text" placeholder="Email Address"></div>
+        <div class="right"><input type="text" placeholder="Website Name"></div>
+    </div>
+    <input type="text" placeholder="Write your Message" class="mess">
+    <button>Submit</button>
+</div>
+</body>
+</html> 

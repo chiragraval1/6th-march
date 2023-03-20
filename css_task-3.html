@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+ 
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: grey;
+        }
+        .main{
+            width: 350px;
+            background-color: rgb(214, 211, 211);
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border: 1px solid skyblue;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        span{
+            color: orange;
+        }
+        .in{
+            background-color: white;
+            border: 2px solid gray;
+            box-shadow: 2px 2px 2px gray;
+            border-radius: 5px;
+            display: flex;
+        }
+        .icon{
+        padding: 10px;
+        }
+        input{
+            border: none;
+            width: 100%;
+        }
+        button{
+            margin-left: 100px;
+            background-color: brown;
+            border: none;
+            width: 100px;
+            border-radius: 5px;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Form<span>Get</span></h1>
+        <hr><br>
+        <p>Full Name:</p><br>
+        <div class="in"><div class="icon"><i class="fa-solid fa-user"></i></div>
+                        <input type="text" placeholder="Full Name">
+                    </div><br>
+        
+        <p>Full Name:</p><br>
+        <div class="in"><div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <input type="email" placeholder="Email"></div><br>
+        
+        <p>Full Name:</p><br>
+        <div class="in"><div class="icon"><i class="fa-solid fa-mobile-retro"></i></div>
+                        <input type="number" placeholder="Contact Number"></div><br>
+        
+        <p>Full Name:</p><br>
+        <div class="in"><div class="icon"><i class="fa-solid fa-house"></i></div>
+                        <input type="text" placeholder="Address"></div><br>
+
+        <button >Submit</button>
+    </div>
+</body>
+</html>

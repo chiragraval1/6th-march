@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right,rgb(90, 199, 243),rgb(144, 37, 227));
+
+    
+}
+
+.header{
+    padding-top: 0px;
+    padding-bottom: 20px;   
+    width: 100%;
+    /* color: white; */
+    font-weight: bolder;
+}
+.header h2{
+    /* color: white; */
+    font-weight: bolder;
+    text-align: center;
+}
+.header p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+.main{
+    display: flex;
+}
+.left{
+    width: 50%;
+    height: 350px;
+    margin-left: 150px;
+    margin-top: 20px;
+    font-weight: bolder; 
+}
+.right{
+    
+}
+.one{
+    display: flex;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    font-size: large;
+    font-weight: bolder;
+}
+.text{
+    width: 80%;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: white;
+    font-weight: bolder;
+}
+.high{
+    
+    margin-bottom: 10px;
+}
+.text h3{
+    color: aqua;
+    font-weight: bolder;
+}
+.right{
+    background-color: white;
+    margin-right: 150px;
+    font-weight: bolder;
+    width: 50%;
+    height: 350px;
+}
+input{
+    margin: 20px;
+    width: 90%;
+    padding-right: 10px;
+    border: none;
+    border-bottom: 1px solid;
+}
+h2{
+    margin: 20px;
+    margin-top: 50px;
+    font-weight: bolder;
+
+}
+button{
+    margin: 20px;
+    margin-top: 20px;
+    background-color: aqua;
+    width: 80px;
+    padding: 5px;
+    border: none;
+    font-weight: bolder;
+}
+.mess{
+    margin-top: -10px;
+    height: 60px;
+ 
+}
