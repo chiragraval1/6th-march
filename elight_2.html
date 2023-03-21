@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Image</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+        .main
+        {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 40px;
+            /* margin-top: 100px; */
+        
+        }
+        .part_one
+        {
+            width: 200px;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0px 0px 5px gray;
+        
+        }
+        .top{
+            width: 200px;
+            height: 300px;
+            position: relative;
+        }
+        .front{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+            transition: 0.5s;
+        }
+        .back{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            transform: rotateY(0deg);
+            backface-visibility: hidden;
+            transition: 0.5s;
+        }
+        .top:hover .front{
+            transform: rotateY(0deg);
+        }
+        .top:hover .back{
+            transform: rotateY(180deg);
+        }
+        .quick{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 43px;
+            line-height: 43px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            opacity: 0;
+            transition: 0.8s;
+            box-sizing: border-box;
+        }
+        .top:hover .quick{
+            transform: translateY(190px);
+            opacity: 1;
+        }
+        .top span{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            padding: 5px;
+            text-align: center;
+            background-color: palevioletred;
+            color: white;
+        }
+
+
+/* top :end */
+
+/* middel start */
+
+        .middel
+        {
+            width: 200px;
+            height: 60px;
+            position: absolute;
+            /* background-color: blueviolet; */
+            top: 275px;
+        }
+        .middel a{
+            text-decoration: none;
+            color: palevioletred;
+        }
+        .middel{
+            text-align: center;
+            line-height: 40px;
+            font-weight: 600;
+        }
+        .light{
+            font-weight: lighter;
+            opacity: 0.8;
+            padding-left: 10px;
+            text-decoration: line-through;
+        }
+
+/* shop now */
+
+
+        .bottom{
+            width: 200px;
+            height: 60px;
+            position: absolute;
+            top: 360px;
+        }
+        
+        .shop{
+            width: 150px;
+            height: 40px;
+            position: absolute;
+            padding: 10px;
+            text-align: center;
+            left: 25px;
+            top: 10px;
+            background: #17c3a2;
+            z-index: 2;
+        }
+
+        .one{
+            width: 150px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            border: 3px solid #17c3a2;
+            transition: 0.5s;
+            z-index: -1;
+        }
+        .shop a{
+            text-decoration: none;
+            color: white;
+        }
+        .bottom:hover .one{
+            transform: scale(1.1 ,1.5);
+
+        }
+
+
+
+        /* flip  :end */
+
+        /* .poster_main{
+            width: 100%;
+            background-color: blue;
+            display: flex;
+            margin-bottom: 100px;
+        }
+        .left{
+            width: 50%;
+            height: 250px;
+            border: 1px solid gray;
+            background: url(images/elight_image-5.jpg);
+            background-size: 100% 100%;
+        } */
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="part_one">
+            <div class="top">
+                <div class="front">
+                    <img src="images/elight_image-1.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="back">
+                    <img src="images/elight_image-1.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="quick">QUICK VIEW</div>
+                <span>New</span>
+            </div>
+            <div class="middel">
+                <span><a href="#">Formal Blue Shirt</a></span>
+                <p>$45.99
+                <span class="light">$69.71</span>
+            </p>
+            </div>
+            <div class="bottom">
+                <div class="shop">
+                    <a href="#">ADD TO CART</a>
+                    <div class="one"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="part_one">
+            <div class="top">
+                <div class="front">
+                    <img src="images/elight_image-2.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="back">
+                    <img src="images/elight_image-2.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="quick">QUICK VIEW</div>
+                <span>New</span>
+            </div>
+            <div class="middel">
+                <span><a href="#">Formal Blue Shirt</a></span>
+                <p>$45.99
+                <span class="light">$69.71</span>
+            </p>
+            </div>
+            <div class="bottom">
+                <div class="shop">
+                    <a href="#">ADD TO CART</a>
+                    <div class="one"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="part_one">
+            <div class="top">
+                <div class="front">
+                    <img src="images/elight_image-3.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="back">
+                    <img src="images/elight_image-3.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="quick">QUICK VIEW</div>
+                <span>New</span>
+            </div>
+            <div class="middel">
+                <span><a href="#">Formal Blue Shirt</a></span>
+                <p>$80.99
+                <span class="light">$89.71</span>
+            </p>
+            </div>
+            <div class="bottom">
+                <div class="shop">
+                    <a href="#">ADD TO CART</a>
+                    <div class="one"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="part_one">
+            <div class="top">
+                <div class="front">
+                    <img src="images/elight_image-4.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="back">
+                    <img src="images/elight_image-4.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="quick">QUICK VIEW</div>
+                <span>New</span>
+            </div>
+            <div class="middel">
+                <span><a href="#">Formal Blue Shirt</a></span>
+                <p>$190.00
+                <span class="light">$159.71</span>
+            </p>
+            </div>
+            <div class="bottom">
+                <div class="shop">
+                    <a href="#">ADD TO CART</a>
+                    <div class="one"></div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+     <!-- parttttt four complit -->
+<!-- 
+     <div class="poster_main">
+        <div class="left">
+
+        </div>
+     </div> -->
+
+</body>
+</html>
